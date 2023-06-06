@@ -42,8 +42,8 @@ func (c *Client) Describe(ctx context.Context, describeReq *DescribeRequest) err
 		return err
 	}
 
-	if describeReq.ext != "png" {
-		return fmt.Errorf("The image_url extension is not png format")
+	if describeReq.ext != "png" && describeReq.ext != "jpg" {
+		return fmt.Errorf("The image_url extension is not both png and jpg format")
 	}
 
 	image, err := getImage(ctx, describeReq.ImageURL)
