@@ -52,7 +52,7 @@ func (c *Client) Imagine(ctx context.Context, imgReq *ImagineRequest) error {
 						"required":    true,
 					},
 				},
-				"attachments": []string{},
+				"attachments": []any{},
 			},
 		},
 	}
