@@ -32,7 +32,7 @@ Currently, only some [commands](https://docs.midjourney.com/docs/command-list) h
 
 - [x] /variation
 
-- [ ] /describe
+- [x] /describe
 
 - [ ] /blend
 
