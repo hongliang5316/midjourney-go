@@ -2,7 +2,7 @@
 
 midjourney-go is a Go client library for accessing the [Midjourney-Bot API](https://midjourney.com/).
 
-It is designed very simply and is lightweight with no additional logic. You can use it to do anything and it belongs to a very low-level library.
+It is designed very simply and is lightweight with no additional logic. It belongs to a very low-level library, so you can use it to do anything.
 
 ## Installation ##
 
@@ -32,9 +32,11 @@ Currently, only some [commands](https://docs.midjourney.com/docs/command-list) h
 
 - [x] /variation
 
+- [ ] /describe
+
 - [ ] /blend
 
-- [ ] /describe
+- [ ] /reset
 
 ## Simple Usage ##
 
