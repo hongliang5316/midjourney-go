@@ -43,7 +43,6 @@ func (c *Client) Describe(ctx context.Context, describeReq *DescribeRequest) err
 	}
 
 	ext := strings.ToLower(describeReq.ext)
-
 	if ext != "png" && ext != "jpg" {
 		return fmt.Errorf("The image_url extension is not both png and jpg format")
 	}
