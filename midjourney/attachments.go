@@ -20,7 +20,8 @@ type Attachment struct {
 }
 
 type AttachmentsRequest struct {
-	Files []File `json:"files"`
+	ChannelID string `json:"channel_id"`
+	Files     []File `json:"files"`
 }
 
 type File struct {
@@ -77,7 +78,7 @@ func (c *Client) Attachments(ctx context.Context, attachmentsReq *AttachmentsReq
 
 	b, _ := json.Marshal(attachmentsReq)
 
-	url := "https://discord.com/api/v9/channels/1115256879271116872/attachments"
+	url := fmt.Sprintf("https://discord.com/api/v9/channels/%s/attachments", attachmentsReq.ChannelID)
 	req, err := http.NewRequest("POST", url, bytes.NewReader(b))
 	if err != nil {
 		return nil, fmt.Errorf("Call http.NewRequest failed, err: %w", err)
