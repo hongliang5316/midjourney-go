@@ -36,7 +36,7 @@ Currently, only some [commands](https://docs.midjourney.com/docs/command-list) h
 
 - [ ] /blend
 
-- [ ] /reset
+- [ ] /reroll
 
 ## Simple Usage ##
 
