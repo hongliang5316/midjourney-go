@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"strings"
 )
 
 type UpscaleRequest struct {
@@ -55,4 +56,12 @@ func (c *Client) Upscale(ctx context.Context, upscaleReq *UpscaleRequest) error 
 	}
 
 	return nil
+}
+
+func GetMessageHash(url string) string {
+	t := strings.Split(url, "_")
+	t = strings.Split(t[len(t)-1], ".")
+	hash := t[0]
+
+	return hash
 }
