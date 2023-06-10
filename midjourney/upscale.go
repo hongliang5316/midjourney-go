@@ -10,7 +10,7 @@ import (
 )
 
 type UpscaleRequest struct {
-	Index       int    `json:"index"`
+	Index       int32  `json:"index"`
 	GuildID     string `json:"guild_id"`
 	ChannelID   string `json:"channel_id"`
 	MessageID   string `json:"message_id"`
