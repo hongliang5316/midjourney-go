@@ -22,26 +22,10 @@ import "github.com/hongliang5316/midjourney-go/midjourney"
 
 and run `go mod tidy` without parameters.
 
-## Features ##
-
-Currently, only some [commands](https://docs.midjourney.com/docs/command-list) have been implemented. All commands will be implemented in the future. If you are interested, please submit a pull request or issues.
-
-- [x] /imagine
-
-- [x] /upscale
-
-- [x] /variation
-
-- [x] /describe
-
-- [ ] /blend
-
-- [ ] /reroll
-
 ## Simple Usage ##
 
-Construct a new Midjourney client, then use the various commands on the client to
-access different parts of the Midjourney-Bot API. For example:
+Construct a new `Midjourney client`, then use the various commands on the client to
+access different parts of the `Midjourney-Bot API`. For example:
 
 ```go
 client := midjourney.NewClient(&midjourney.Config{
@@ -58,6 +42,22 @@ if err != nil {
     log.Fatalf("Call client.Imagine failed, err: %+v", err)
 }
 ```
+
+## Features ##
+
+Currently, only some [commands](https://docs.midjourney.com/docs/command-list) have been implemented. All commands will be implemented in the future. If you are interested, please submit a pull request or issues.
+
+- [x] /imagine
+
+- [x] /upscale
+
+- [x] /variation
+
+- [x] /describe
+
+- [ ] /blend
+
+- [ ] /reroll
 
 ## License ##
 
