@@ -33,12 +33,11 @@ client := midjourney.NewClient(&midjourney.Config{
 })
 
 // imagine
-err := client.Imagine(context.Background(), &midjourney.ImagineRequest{
+if err := client.Imagine(context.Background(), &midjourney.ImagineRequest{
     GuildID: "",
     ChannelID: "",
     Prompt: "",
-})
-if err != nil {
+}); err != nil {
     log.Fatalf("Call client.Imagine failed, err: %+v", err)
 }
 ```
