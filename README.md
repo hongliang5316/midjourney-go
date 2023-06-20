@@ -9,7 +9,7 @@ It is designed very simply and is lightweight with no additional logic. It belon
 midjourney-go is compatible with modern Go releases in module mode, with Go installed:
 
 ```bash
-go get github.com/hongliang5316/midjourney-go
+go get github.com/hongliang5316/midjourney-go@v0.0.1
 ```
 
 will resolve and add the package to the current development module, along with its dependencies.
