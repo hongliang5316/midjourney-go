@@ -4,6 +4,8 @@ midjourney-go is a Go client library for accessing the [Midjourney-Bot API](http
 
 It is designed very simply and is lightweight with no additional logic. It belongs to a very low-level library, so you can use it to do anything.
 
+If you want to build your own midjourney apiserver, take a look at this [midjourney-apiserver](https://github.com/hongliang5316/midjourney-apiserver).
+
 ## Installation ##
 
 midjourney-go is compatible with modern Go releases in module mode, with Go installed:
